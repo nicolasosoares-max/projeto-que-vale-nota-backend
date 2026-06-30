@@ -1,0 +1,121 @@
+### ROTA INICIAL
+
+GET http://localhost:3000
+
+
+### CADASTRAR USUÁRIO
+
+POST http://localhost:3000/usuarios
+Content-Type: application/json
+
+{
+    "nome": "Nicolas Osvaldo Soares",
+    "email": "nicolas@gmail.com",
+    "senha": "12345"
+}
+
+
+### CADASTRAR SEGUNDO USUÁRIO
+
+POST http://localhost:3000/usuarios
+Content-Type: application/json
+
+{
+    "nome": "Maria Silva",
+    "email": "maria@gmail.com",
+    "senha": "54321"
+}
+
+
+### LISTAR USUÁRIOS
+
+GET http://localhost:3000/usuarios
+
+
+### BUSCAR USUÁRIO PELO ID
+
+GET http://localhost:3000/usuarios/1
+
+
+### REALIZAR LOGIN
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "nicolas@gmail.com",
+    "senha": "12345"
+}
+
+
+### ALTERAR USUÁRIO
+
+PUT http://localhost:3000/usuarios/1
+Content-Type: application/json
+
+{
+    "nome": "Nicolas Soares",
+    "email": "nicolas@gmail.com",
+    "senha": "12345"
+}
+
+
+### CADASTRAR NOTA
+
+POST http://localhost:3000/notas
+Content-Type: application/json
+
+{
+    "titulo": "Trabalho da escola",
+    "conteudo": "Finalizar o projeto do bloco de notas.",
+    "usuario_id": 1
+}
+
+
+### CADASTRAR OUTRA NOTA
+
+POST http://localhost:3000/notas
+Content-Type: application/json
+
+{
+    "titulo": "Lista de compras",
+    "conteudo": "Comprar pão, leite, café e açúcar.",
+    "usuario_id": 1
+}
+
+
+### LISTAR TODAS AS NOTAS
+
+GET http://localhost:3000/notas
+
+
+### BUSCAR NOTA PELO ID
+
+GET http://localhost:3000/notas/1
+
+
+### LISTAR NOTAS DO USUÁRIO 1
+
+GET http://localhost:3000/usuarios/1/notas
+
+
+### ALTERAR NOTA
+
+PUT http://localhost:3000/notas/1
+Content-Type: application/json
+
+{
+    "titulo": "Trabalho da escola atualizado",
+    "conteudo": "Finalizar o back-end e iniciar o front-end.",
+    "usuario_id": 1
+}
+
+
+### EXCLUIR NOTA
+
+DELETE http://localhost:3000/notas/2
+
+
+### EXCLUIR USUÁRIO
+
+DELETE http://localhost:3000/usuarios/2

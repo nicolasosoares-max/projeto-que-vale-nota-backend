@@ -1,0 +1,18 @@
+{
+  "name": "bloco_notas_back",
+  "version": "1.0.0",
+  "description": "API de um sistema de bloco de notas",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "...",
+    "fastify": "...",
+    "pg": "..."
+  }
+}

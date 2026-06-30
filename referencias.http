@@ -60,7 +60,7 @@ Content-Type: application/json
 }
 
 
-### CADASTRAR NOTA
+### CADASTRARNOTA
 
 POST http://localhost:3000/notas
 Content-Type: application/json
